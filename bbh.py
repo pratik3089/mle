@@ -8,12 +8,11 @@ import base64
 
 result = None
 
-with open(
-        r"C:\Users\Admin\Desktop\ml\bangalore_home_prices_model.pickle", 
+with open(r"C:\ Users\ Admin\ Desktop\ ml\ bangalore_home_prices_model.pickle", 
         'rb') as f:
     __model = pickle.load(f)
 
-with open(r"C:\Users\Admin\Desktop\ml\Columns.json", 'r') as obj:
+with open(r"C:\ Users\ Admin\ Desktop\ ml\ Columns.json",'r') as obj:
     __data_columns = json.load(obj)["Columns"]
     __area_types = __data_columns[4:8]
     __locations = __data_columns[8:]
